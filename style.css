@@ -132,19 +132,29 @@ a {
 
 
 .container {
-    display:grid;
-    grid-template-columns: 60% 40%;
+    display:flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 0;
 }
 
 .text {
-    grid-column: 1;
+    width: 50%;
     
 }
 
 .image {
-    grid-column: 2;
-    
+    width: 30%;
+    height: 1100px;
+    background-image: url("images/headshot.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.35s;
+}
+
+.image:hover {
+    background-image: url("images/headshot_hover.png");
 }
 
 .edubox {
@@ -236,7 +246,7 @@ a {
 
 .hidden {
     opacity:0;
-    transition: all 2s;
+    transition: transform 2s, opacity 2s, background-image 0.35s;
     transform: translateY(50px);
 }
 
