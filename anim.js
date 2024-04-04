@@ -10,6 +10,7 @@ const observer = new IntersectionObserver((entries)=> {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
+window.onload = myFunction();
 function myFunction() {
     var x = document.getElementById("dropdown");
     if (x.style.display === "none") {
@@ -18,6 +19,6 @@ function myFunction() {
       x.style.display = "none";
     }
     
-    
-  }
+ }
+
     
