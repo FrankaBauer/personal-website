@@ -109,6 +109,7 @@ h3 {
 
 .navbar a.right {
     float: right;
+    margin-right: 15px;
 }
 
 .navbar .button {
